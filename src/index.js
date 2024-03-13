@@ -1,7 +1,7 @@
 const express = require("express")
 const app = express()
-const { forceHTTPS } = require("./shared/https.js")
 const { wwwRedirect } = require("./shared/www.js")
+const { forceHTTPS } = require("./shared/https.js")
 const { robots } = require("./shared/robots.js")
 
 app.enable("trust proxy")
