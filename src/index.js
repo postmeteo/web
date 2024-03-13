@@ -3,6 +3,7 @@ const app = express()
 const { forceHTTPS } = require("./shared/https.js")
 const { robots } = require("./shared/robots.js")
 
+app.enable("trust proxy")
 app.use(forceHTTPS)
 app.use(express.json())
 app.use("/robots.txt", robots)
